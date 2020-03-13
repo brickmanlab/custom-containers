@@ -3,6 +3,7 @@ channels:
   - conda-forge
   - bioconda
   - anaconda
+  - plotly
   - r
   - defaults
 dependencies:
@@ -19,7 +20,7 @@ dependencies:
   - conda-forge::leidenalg=0.7.0
   - anaconda::openpyxl=3.0.3
   - bioconda::bbknn=1.3.7
-  - bioconda::gprofiler-official=1.1.0
+  - plotly::plotly=4.5.4
   # Palantir
   - r::r=3.6.0
   - conda-forge::r-gam=1.16.1

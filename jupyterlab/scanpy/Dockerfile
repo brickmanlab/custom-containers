@@ -15,13 +15,15 @@ USER jovyan
 COPY . .
 
 # Scanpy Setup
-RUN conda env create -f /opt/setup/scanpy/environment.yml && conda clean -a
+RUN conda env create -f /opt/setup/environment.yml && conda clean -a
 ENV PATH /opt/conda/envs/scanpy-env/bin:$PATH
 ENV CONDA_DEFAULT_ENV scanpy-env
 RUN python -m ipykernel install --user --name scanpy-env --display-name="Scanpy setup" && \
 	jupyter nbextension enable --py widgetsnbextension --sys-prefix && \
 	jupyter labextension install @jupyter-widgets/jupyterlab-manager@^1.0.1 --no-build && \
     jupyter labextension install jupyterlab_bokeh@1.0.0 --no-build && \
+	jupyter labextension install jupyterlab-plotly@1.5.3 --no-build && \
+	jupyter labextension install plotlywidget@1.5.3 --no-build && \
     jupyter lab build
 
 RUN pip install fa2 && \
