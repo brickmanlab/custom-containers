@@ -1,7 +1,7 @@
 FROM jupyter/base-notebook:notebook-6.0.0
 
 USER root
-RUN apt-get update && apt-get install -y build-essential wget git cmake
+RUN apt-get update && apt-get install -y build-essential wget git cmake tzdata
 
 # Link pip -> pip3
 RUN ln -s /opt/conda/bin/pip /usr/bin/pip3
@@ -31,6 +31,7 @@ RUN pip install fa2 && \
 	# Palantir Setup
 	pip install git+https://github.com/jacoblevine/phenograph.git@7f4bc18699adb513a983ba183fdc7c989c219b85 && \
 	pip install git+https://github.com/dpeerlab/Palantir.git@v0.2.1 && \
+	pip install git+https://github.com/dpeerlab/Harmony.git@531b4e8a517c7b06351630596d2d262fbb8cb011 && \
 	pip install git+https://github.com/JonathanShor/DoubletDetection.git@v2.5.2 && \
 	pip install git+https://github.com/chriscainx/mnnpy.git@v0.1.9.4
 
