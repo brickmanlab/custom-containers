@@ -1,13 +1,4 @@
-FROM jupyter/base-notebook:notebook-6.0.0
-
-USER root
-RUN apt-get update && apt-get install -y build-essential wget git cmake tzdata
-
-# Link pip -> pip3
-RUN ln -s /opt/conda/bin/pip /usr/bin/pip3
-
-WORKDIR /opt/setup/
-RUN fix-permissions /opt/setup/
+FROM brickmanlab/base-notebook:6.0.0
 
 USER jovyan
 
@@ -18,14 +9,7 @@ COPY . .
 RUN conda env create -f /opt/setup/environment.yml && conda clean --all -f -y
 ENV PATH /opt/conda/envs/scanpy-env/bin:$PATH
 ENV CONDA_DEFAULT_ENV scanpy-env
-RUN python -m ipykernel install --user --name scanpy-env --display-name="Scanpy setup" && \
-	jupyter nbextension enable --py widgetsnbextension --sys-prefix && \
-	jupyter labextension install @jupyter-widgets/jupyterlab-manager@^1.0.1 --no-build && \
-    jupyter labextension install jupyterlab_bokeh@1.0.0 --no-build && \
-	jupyter labextension install jupyterlab-plotly@1.5.3 --no-build && \
-	jupyter labextension install @jupyterlab/toc && \
-	jupyter labextension install plotlywidget@1.5.3 --no-build && \
-    jupyter lab build
+RUN python -m ipykernel install --user --name scanpy-env --display-name="Scanpy setup"
 
 RUN pip install fa2 && \
 	# Palantir Setup
