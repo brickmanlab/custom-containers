@@ -14,8 +14,7 @@ USER jovyan
 
 RUN conda install --quiet --yes \
     'conda-forge::ipywidgets=7.5.*' \
-    'conda-forge::nodejs' \
-    'conda-forge::ipycytoscape' && \
+    'conda-forge::nodejs' && \
     conda clean --all -y && \
     jupyter labextension install @jupyter-widgets/jupyterlab-manager --no-build && \
     # visualization
