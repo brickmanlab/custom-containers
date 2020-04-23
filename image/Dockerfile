@@ -11,7 +11,4 @@ RUN conda env export --name image-1.1 > /app/image-1.1.yml
 WORKDIR /image
 RUN wget http://bioinformatik.sdu.dk/solexa/webshare/IMAGE/IMAGE_v1.1.tar.gz \
     && tar -xvf IMAGE_v1.1.tar.gz --strip 1 \
-    && wget http://bioinformatik.sdu.dk/solexa/webshare/IMAGE/IMAGE_Data.tar.gz \
-    && tar -xvf IMAGE_Data.tar.gz \
-    # cleanup
-    && rm IMAGE_v1.1.tar.gz IMAGE_Data.tar.gz
+    && rm IMAGE_v1.1.tar.gz 
