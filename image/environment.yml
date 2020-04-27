@@ -17,6 +17,7 @@ dependencies:
   # R libraries found in the source code
   - bioconda::bioconductor-org.mm.eg.db=3.10.0
   - bioconda::bioconductor-org.hs.eg.db=3.10.0
+  - bioconda::bioconductor-genomeinfodbdata=1.2.2
   - bioconda::bioconductor-clusterprofiler=3.14.0
   - bioconda::bioconductor-kegg.db=3.2.3
   - bioconda::bioconductor-goseq=1.38.0
