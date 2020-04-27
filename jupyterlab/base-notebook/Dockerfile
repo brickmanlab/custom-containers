@@ -22,10 +22,10 @@ RUN conda install --quiet --yes \
     jupyter labextension install jupyter-matplotlib --no-build && \
     jupyter labextension install jupyterlab-plotly --no-build && \
     jupyter labextension install plotlywidget --no-build && \
-    jupyter labextension install jupyter-cytoscape && \
+    jupyter labextension install jupyter-cytoscape --no-build && \
     # other
-    jupyter labextension install @jupyterlab/toc && \
-    jupyter labextension install @aquirdturtle/collapsible_headings && \
+    jupyter labextension install @jupyterlab/toc --no-build && \
+    jupyter labextension install @aquirdturtle/collapsible_headings --no-build && \
     # build
     jupyter lab build && \
     jupyter lab clean && \
