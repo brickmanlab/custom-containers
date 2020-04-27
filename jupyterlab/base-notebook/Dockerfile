@@ -1,4 +1,4 @@
-FROM jupyter/base-notebook:notebook-6.0.0
+FROM jupyter/base-notebook:notebook-6.0.3
 
 USER root
 RUN apt-get update && apt-get install -yq --no-install-recommends \
