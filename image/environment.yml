@@ -3,26 +3,28 @@ channels:
   - conda-forge
   - bioconda
   - r
+  - defaults
 dependencies:
-  - r::r=3.6.0
+  - r::r=3.5.1
   - conda-forge::perl=5.26.2
   - bioconda::homer=4.10
   # R packages from reamde.txt
   - r::r-glmnet=2.0_16
-  - r::r-doparallel=1.0.14
+  - r::r-doparallel=1.0.11
   - r::r-foreach=1.4.4
   - conda-forge::r-matrix=1.2_18
-  - r::r-data.table=1.12.2
-  - r::r-cluster=2.0.8
+  - r::r-data.table=1.11.4
+  - r::r-cluster=2.0.7_1
   # R libraries found in the source code
-  - bioconda::bioconductor-org.mm.eg.db=3.10.0
-  - bioconda::bioconductor-org.hs.eg.db=3.10.0
-  - bioconda::bioconductor-genomeinfodbdata=1.2.2
-  - bioconda::bioconductor-clusterprofiler=3.14.0
+  - bioconda::bioconductor-org.mm.eg.db=3.6.0
+  - bioconda::bioconductor-org.hs.eg.db=3.6.0
+  - bioconda::bioconductor-genomeinfodb=1.16.0
+  - bioconda::bioconductor-genomeinfodbdata=1.1.0
+  - bioconda::bioconductor-clusterprofiler=3.8.1
   - bioconda::bioconductor-kegg.db=3.2.3
-  - bioconda::bioconductor-goseq=1.38.0
-  - bioconda::bioconductor-genomicranges=1.38.0
+  - bioconda::bioconductor-goseq=1.32.0
+  - bioconda::bioconductor-genomicranges=1.32.7
+  - bioconda::bioconductor-edger=3.26.0
+  - bioconda::bioconductor-reactome.db=1.64.0
   - conda-forge::r-pheatmap=1.0.12
-  - bioconda::bioconductor-edger=3.28.0
-  - bioconda::bioconductor-reactome.db=1.70.0
   - conda-forge::r-beeswarm=0.2.3
