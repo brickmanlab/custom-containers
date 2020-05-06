@@ -22,6 +22,9 @@ dependencies:
   - conda-forge::matplotlib=3.2.1
   - conda-forge::matplotlib-venn=0.11.5
   - anaconda::networkx=2.4
+  # scVI
+  - bioconda::scvi=0.6.4
+  - conda-forge::dataclasses=0.7
   # Palantir
   - r::r=3.6.0
   - conda-forge::r-gam=1.16.1
