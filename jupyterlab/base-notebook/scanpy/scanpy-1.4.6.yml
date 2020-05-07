@@ -1,0 +1,9 @@
+name: scanpy-1.4.6
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - conda-forge::python=3.8.2
+  - conda-forge::ipykernel=5.2.1
+  - bioconda::scanpy=1.4.6
+  - conda-forge::leidenalg=0.8.0
