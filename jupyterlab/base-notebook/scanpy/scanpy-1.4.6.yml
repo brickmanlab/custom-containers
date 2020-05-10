@@ -7,3 +7,4 @@ dependencies:
   - conda-forge::ipykernel=5.2.1
   - bioconda::scanpy=1.4.6
   - conda-forge::leidenalg=0.8.0
+  - bioconda::scrublet=0.2.1
