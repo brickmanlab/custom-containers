@@ -1,0 +1,21 @@
+name: scanpy-1.6.0
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  # mandatory for jupyter
+  - conda-forge::ipykernel
+  - conda-forge::ipywidgets
+  - conda-forge::nodejs
+  - bioconda::scanpy=1.6.0
+  - pip:
+    - loompy
+    - bbknn
+    - leidenalg
+    - gprofiler-official
+    - mnnpy
+    - PhenoGraph
+    - fa2
+    - git+https://github.com/JonathanShor/DoubletDetection.git@v2.5.2
+    - git+https://github.com/dpeerlab/Palantir.git@v1.0.0

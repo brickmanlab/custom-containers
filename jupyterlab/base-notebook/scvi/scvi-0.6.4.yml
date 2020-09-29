@@ -1,8 +1,0 @@
-name: scvi-0.6.4
-channels:
-  - conda-forge
-  - bioconda
-  - defaults
-dependencies:
-  - conda-forge::ipykernel=5.2.1
-  - bioconda::scvi=0.6.4
