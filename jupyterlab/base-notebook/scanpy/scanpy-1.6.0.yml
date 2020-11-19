@@ -9,6 +9,7 @@ dependencies:
   - conda-forge::ipywidgets
   - conda-forge::nodejs
   - bioconda::scanpy=1.6.0
+  - bioconda::openpyxl
   - pip:
     - loompy
     - bbknn
