@@ -1,16 +1,20 @@
-name: scanpy-1.6.0
+name: scanpy-1.5.1
 channels:
   - conda-forge
   - bioconda
   - defaults
 dependencies:
   # mandatory for jupyter
+  - conda-forge::python=3.7
+  - bioconda::scanpy=1.5.1
   - conda-forge::ipykernel
   - conda-forge::ipywidgets
   - conda-forge::nodejs
-  - bioconda::scanpy=1.6.0
-  - bioconda::openpyxl
   - pip:
+    - openpyxl
+    - dca
+    - tensorflow==1.15
+    - keras==1.1.5
     - loompy
     - bbknn
     - leidenalg
