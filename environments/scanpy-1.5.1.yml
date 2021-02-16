@@ -10,7 +10,7 @@ dependencies:
   - conda-forge::ipykernel
   - conda-forge::ipywidgets
   - conda-forge::nodejs
-  - conda-forge::r-base-4.0.3
+  - conda-forge::r-base=4.0.3
   - pip:
     - openpyxl
     - dca
