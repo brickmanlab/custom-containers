@@ -1,0 +1,27 @@
+name: scanpy-1.5.1
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  # mandatory for jupyter
+  - conda-forge::python=3.7
+  - bioconda::scanpy=1.5.1
+  - conda-forge::ipykernel
+  - conda-forge::ipywidgets
+  - conda-forge::nodejs
+  - conda-forge::r-base-4.0.3
+  - pip:
+    - openpyxl
+    - dca
+    - tensorflow==1.15
+    - keras==1.1.5
+    - loompy
+    - bbknn
+    - leidenalg
+    - gprofiler-official
+    - mnnpy
+    - PhenoGraph
+    - fa2
+    - doubletdetection
+    - palantir
