@@ -24,8 +24,4 @@ RUN chown -R jovyan:users /opt/setup/
 
 USER jovyan
 
-# scanpy
-RUN conda env create -f /opt/setup/scanpy/scanpy-1.5.1.yml && conda clean -a
-RUN /opt/conda/envs/scanpy-1.5.1/bin/python -m ipykernel install --user --name scanpy-1.5.1 --display-name="scanpy-1.5.1"
-
 WORKDIR /home/jovyan/work
