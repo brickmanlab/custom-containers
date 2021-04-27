@@ -1,0 +1,16 @@
+name: palantir-1.0.0
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  # mandatory for jupyter
+  - conda-forge::python=3.7
+  - conda-forge::ipykernel
+  - conda-forge::ipywidgets
+  - conda-forge::nodejs
+  - pip
+  - pip:
+    - harmonyTS==0.1.4
+    - palantir==1.0.0
+    - PhenoGraph==1.5.7
