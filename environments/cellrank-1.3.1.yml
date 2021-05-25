@@ -15,3 +15,7 @@ dependencies:
     - numba==0.52.0
     - python-igraph==0.9.1
     - scanpy==1.7.2
+    - python-igraph==0.9.1
+    - louvain==0.7.0
+    - leidenalg==0.8.4
+
